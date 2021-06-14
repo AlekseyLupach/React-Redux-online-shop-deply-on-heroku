@@ -1,0 +1,131 @@
+.filter {
+  margin-top: 30px;
+  margin-left: 14px;
+  font-size: 14px;
+  margin-bottom: 30px;
+
+  button {
+    height: 40px;
+    width: 110px;
+    background-color: transparent;
+    border: 1px solid $border;
+    border-radius: 30px;
+    transition: all 0.1s ease-in-out;
+    margin-right: 20px;
+    outline: none;
+    padding: 10px 25px;
+    cursor: pointer;
+  }
+  .catalogbtnactive {
+    border: 1px solid black !important;
+  }
+}
+
+.sort {
+  width: 100%;
+  font-size: 14px;
+  color: $grey;
+  padding: 20px 0;
+  position: relative;
+}
+
+.sort-search_wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid $border;
+  border-bottom: 1px solid $border;
+}
+
+.sort svg {
+  transform: rotate(180deg);
+}
+
+.sort .rotate {
+  transform: rotate(0deg);
+}
+
+.sort-wrapper {
+  position: relative;
+  width: 220px;
+}
+
+.filter-input__form {
+  width: auto;
+  float: right;
+  margin-right: 30px;
+  position: relative;
+
+  .filter-input {
+    width: 250px;
+    height: 42px;
+    padding-left: 15px;
+    border-radius: 42px;
+    border: 1px solid $border;
+    background: transparent;
+    outline: none;
+    position: relative;
+    transition: 0.3s linear;
+
+    &:focus {
+      width: 300px;
+      border: 1px solid $blue;
+    }
+  }
+
+  .filter-input__btn {
+    width: 42px;
+    height: 42px;
+    background: none;
+    border: none;
+    position: absolute;
+    right: 2px;
+  }
+}
+
+.filter-price__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.filter-price__wrapper svg {
+  margin-right: 5px;
+}
+
+.filter-price__wrapper span {
+  margin-left: 5px;
+  color: $blue;
+  border-bottom: 1px dashed $blue;
+  cursor: pointer;
+}
+
+.sort__popup {
+  z-index: 9999;
+  position: absolute;
+  right: 0px;
+  margin-top: 15px;
+  background: $white;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 10px 0;
+  width: 160px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.6);
+  ul {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    li {
+      list-style-type: none;
+      padding: 12px 20px;
+      cursor: pointer;
+      &:active,
+      &:hover {
+        background: $light;
+      }
+    }
+  }
+  .sort__popupactive {
+    font-weight: bold;
+    color: $blue;
+  }
+}

@@ -1,0 +1,604 @@
+@media screen and (max-width: 1420px) {
+  .products-nav .grid-container {
+    max-width: 940px;
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    grid-template-areas:
+      "macbook macbook"
+      "iphone ipad"
+      "iphone smart-home"
+      "mac-mini accessories";
+  }
+
+  .advantages-cards_card {
+    margin-right: 10px;
+  }
+
+  .products-advertising
+    .products-advertising__wrapper
+    .product-advertising:nth-child(3) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .products-lists {
+    .grid-container,
+    .product-grid {
+      grid-template-columns: repeat(3, 1fr) !important;
+    }
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .header__nav {
+    .nav__list {
+      .nav__item {
+        display: none;
+      }
+    }
+  }
+
+  .react-burger-menu-btn,
+  .bm-burger-button {
+    display: block;
+  }
+
+  .header .header__wrapper .header__cart,
+  .header__logo {
+    width: auto;
+  }
+
+  .header .header__wrapper .nav {
+    width: 0;
+  }
+
+  .header .header__wrapper .header__cart button {
+    font-size: 14px;
+  }
+  .carusel .swiper-item {
+    height: 520px;
+  }
+
+  .header__logo {
+    font-size: 24px;
+    margin-left: 80px;
+  }
+
+  .header__wrapper {
+    justify-content: normal;
+  }
+
+  .header__cart {
+    margin-left: 0;
+  }
+
+  .nav__item:not(:last-child) {
+    margin-right: 0px;
+  }
+
+  .product-advertising img {
+    max-width: 100px;
+  }
+
+  .product-text {
+    font-size: 12px;
+  }
+
+  .product-advertising .product-info {
+    font-size: 14px;
+  }
+
+  .product-advertising .product-name,
+  .product-advertising .product-text {
+    margin-bottom: 10px;
+  }
+
+  .products-nav .grid-container,
+  .about-us {
+    margin-top: 30px;
+  }
+
+  .about-us {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .about-us_wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-us_text {
+    width: 100%;
+  }
+
+  .about-us_text p,
+  .about-us_text h4 {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .about-us_video img {
+    margin-right: 0;
+  }
+
+  .advantages-cards {
+    margin-bottom: 0px;
+  }
+
+  .advantages-cards__wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .contacts {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .contacts__info {
+    flex-basis: 50%;
+    text-align: center;
+  }
+
+  .contacts__info:nth-child(1),
+  .contacts__info:nth-child(2) {
+    margin-bottom: 20px;
+  }
+
+  .footer__wrapper {
+    flex-direction: column;
+    padding: 20px 0;
+  }
+
+  .footer__wrapper .footer__logo,
+  .footer__wrapper p,
+  .footer__wrapper img {
+    margin-left: 0px;
+    padding: 5px;
+  }
+
+  .products-lists .grid-container,
+  .products-lists .product-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .filter {
+    display: flex;
+  }
+
+  .cart-content {
+    width: 400px;
+  }
+
+  .cart-product-img__wrapper {
+    min-width: 60px;
+    min-height: 60px;
+    margin-right: 0;
+  }
+
+  .cart-product__img {
+    max-width: 60px;
+    max-height: 60px;
+  }
+
+  .cart-product__title,
+  .cart-product__count {
+    font-size: 14px;
+  }
+
+  .cart-product__price {
+    font-size: 16px;
+  }
+
+  .cart-product__text {
+    max-width: 200px;
+  }
+
+  .cart-product__delete {
+    width: 16px;
+    height: 16px;
+  }
+
+  .cart-product {
+    padding: 10px;
+  }
+
+  .cart-content__bottom {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .cart-content__fullprice {
+    text-align: center;
+  }
+
+  .fullprice {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  .cart-content__btn {
+    width: 100%;
+  }
+
+  .card {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .product-info__name {
+    margin-bottom: 10px;
+  }
+
+  .product-advertising .product-btn {
+    margin-top: 0;
+  }
+
+  .products-nav .grid-container .macbook {
+    padding: 0px;
+  }
+
+  .products-nav .grid-container .accessories {
+    background-position: center 140%;
+  }
+}
+
+@media screen and (max-width: 766px) {
+  .products-advertising
+    .products-advertising__wrapper
+    .product-advertising:nth-child(3) {
+    display: flex;
+  }
+
+  .header__logo {
+    font-size: 18px;
+  }
+
+  .header__auth {
+    font-size: 14px;
+  }
+
+  .products-advertising__wrapper {
+    flex-wrap: wrap;
+  }
+
+  .product-advertising:last-child {
+    display: flex;
+  }
+
+  .product-advertising img {
+    max-width: 100%;
+  }
+
+  .products-nav .grid-container {
+    max-width: 940px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "macbook"
+      "iphone"
+      "ipad"
+      "smart-home"
+      "mac-mini"
+      "accessories";
+    gap: 10px;
+  }
+
+  .please-register-catalog {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .product-nav .product-name {
+    padding: 20px;
+  }
+
+  .grid-container .macbook {
+    padding: 0;
+  }
+
+  .grid-container .accessories {
+    background-position: center 100%;
+  }
+
+  .about-us_video img {
+    max-width: 400px;
+  }
+
+  .advantages-cards_card {
+    max-width: 90%;
+  }
+
+  .contacts .contacts__wrapper .contacts__info .contacts__info-title {
+    font-size: 18px;
+  }
+
+  .contacts .contacts__wrapper .contacts__info .contacts__info-subtitle {
+    font-size: 14px;
+  }
+
+  .contacts__title {
+    margin-bottom: 20px;
+    font-size: 22px;
+  }
+
+  .contacts__info i {
+    font-size: 22px;
+  }
+
+  .card-slider {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    width: 100%;
+    height: 400px;
+  }
+
+  .slider-nav {
+    width: 100%;
+  }
+
+  .card-slider__nav {
+    display: flex;
+    order: 2;
+    margin-top: 10px;
+  }
+
+  .card-slider__block {
+    display: flex;
+    order: 1;
+    width: 100%;
+  }
+
+  .slider-nav__item {
+    width: 82px;
+  }
+
+  .slider-block {
+    height: 300px;
+  }
+
+  .swiper-slide {
+    width: 100%;
+  }
+
+  .card-info {
+    align-items: flex-start;
+  }
+
+  .vendor,
+  .price,
+  .available {
+    margin-bottom: 10px;
+  }
+
+  .card {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .cart-content {
+    width: 300px;
+  }
+
+  .cart-product__delete {
+    margin-left: 0px;
+  }
+
+  .cart-product__img {
+    max-width: 40px;
+    max-height: 40px;
+  }
+
+  .cart-product-img__wrapper {
+    min-width: 40px;
+    min-height: 40px;
+  }
+
+  .cart-product__title,
+  .cart-product__count {
+    font-size: 12px;
+  }
+
+  .cart-product__price {
+    font-size: 14px;
+  }
+
+  .cart-product__text {
+    max-width: 160px;
+  }
+
+  .fullprice,
+  .cart-content__btn {
+    font-size: 16px;
+  }
+
+  .filter {
+    flex-wrap: wrap;
+  }
+
+  .catalogbtn {
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+
+  .products-lists .grid-container,
+  .products-lists .product-grid {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+
+  .cart-product__quantity,
+  .cart-product__ttlprice {
+    font-size: 16px;
+  }
+
+  .cart-product__delete-modal {
+    width: 44px;
+  }
+
+  .sort-search_wrapper {
+    flex-direction: column;
+  }
+
+  .filter-input__form .filter-input,
+  .filter-input__form {
+    width: 100%;
+  }
+
+  .filter-input__form {
+    order: 1;
+    margin-right: 0;
+    margin-top: 20px;
+  }
+
+  .sort {
+    order: 2;
+  }
+
+  .filter {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .filter button {
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+
+  .filter-input,
+  .filter-input:focus,
+  .filter-input__form {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .contacts .contacts__wrapper .contacts__info .contacts__info-title,
+  .advantages-cards
+    .advantages-cards__wrapper
+    .advantages-cards_card
+    .advantages-card_title,
+  .about-us .about-us_wrapper .about-us_text {
+    font-size: 14px;
+  }
+  .header__burger {
+    left: 30px;
+  }
+
+  .about-us_video img {
+    max-width: 300px;
+  }
+
+  .product-advertising img {
+    max-width: 100px;
+  }
+
+  .product-text {
+    font-size: 14px;
+  }
+
+  .product-advertising .product-name {
+    font-size: 14px;
+  }
+
+  .header-email_wrapper span {
+    font-size: 12px;
+  }
+
+  .cart__text {
+    font-size: 14px;
+  }
+
+  .contacts__info i,
+  .contacts__info-title {
+    font-size: 16px;
+  }
+
+  .catalogbtn {
+    height: 30px;
+    width: 80px;
+  }
+
+  .filter,
+  .grid-container,
+  .product-grid {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .slider-nav__item:last-child {
+    display: none;
+  }
+
+  .cart-content {
+    width: 250px;
+  }
+
+  .cart-product__text {
+    max-width: 140px;
+  }
+
+  .modal__container {
+    max-width: 300px;
+    padding: 10px;
+  }
+
+  .cart-product__quantity,
+  .cart-product__ {
+    font-size: 14px;
+  }
+
+  .cart-product__minus,
+  .cart-product__plus {
+    padding: 0;
+  }
+
+  .cart-product__quantity-modal button {
+    width: 14px;
+  }
+
+  .cart-product__quantity,
+  .cart-product__ttlprice {
+    font-size: 14px;
+  }
+
+  .cart-product__ttlprice-modal {
+    width: 80px;
+  }
+
+  .order__input {
+    height: 42px;
+  }
+
+  .order-modal__form-sum {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .bm-burger-button {
+    width: 30px;
+  }
+
+  .header__logo {
+    margin-left: 60px;
+  }
+}

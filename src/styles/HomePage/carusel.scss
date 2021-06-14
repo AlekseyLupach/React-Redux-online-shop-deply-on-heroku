@@ -1,0 +1,13 @@
+.carusel {
+  background-color: $black;
+  width: 100%;
+
+  .swiper-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.contacts {
+  margin-top: 40px;
+  position: relative;
+  margin-bottom: 40px;
+
+  .contacts__title {
+    margin-bottom: 30px;
+    color: $grey;
+  }
+
+  .contacts__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    .contacts__info {
+      position: relative;
+      z-index: 10;
+
+      .contacts__info-title {
+        font-size: 22px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        color: $blue;
+
+        i {
+          padding-right: 6px;
+        }
+      }
+
+      .contacts__info-subtitle {
+        font-size: 18px;
+        color: $grey;
+      }
+    }
+  }
+
+  .maps__wrapper {
+    position: relative;
+    filter: brightness(80%);
+    transition: all 0.5s ease-in-out;
+    &:hover {
+      filter: brightness(100%);
+    }
+  }
+  .fa-instagram,
+  .fa-facebook-official,
+  .fa-twitter {
+    transition: all 0.3s;
+    color: $grey;
+    &:hover {
+      color: $blue;
+    }
+  }
+}

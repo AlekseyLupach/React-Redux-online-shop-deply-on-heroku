@@ -1,0 +1,80 @@
+.products-nav .grid-container {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  grid-template-areas:
+    "iphone macbook macbook ipad"
+    "iphone smart-home mac-mini accessories";
+
+  .macbook {
+    grid-area: macbook;
+    background-image: url(../../img/products-nav/macbook.jpg);
+    background-color: $white;
+    background-position: 5px top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 345px;
+    padding: 0px 30px 30px 400px;
+    img {
+      width: 400px;
+    }
+  }
+  .iphone {
+    grid-area: iphone;
+    background-image: url(../../img/products-nav/iphone.jpg);
+    background-position: center 190px;
+    background-size: 225px;
+    background-repeat: no-repeat;
+  }
+  .ipad {
+    grid-area: ipad;
+    background-image: url(../../img/products-nav/ipad.jpg);
+    background-position: center 150px;
+    background-size: 240px;
+    background-repeat: no-repeat;
+  }
+  .accessories {
+    grid-area: accessories;
+    background-image: url(../../img/products-nav/accessories.jpg);
+    background-position: 100% 100%;
+    background-size: 332px;
+    background-repeat: no-repeat;
+  }
+  .mac-mini {
+    grid-area: mac-mini;
+    background-image: url(../../img/products-nav/mac-mini.jpg);
+    background-position: center 225px;
+    background-size: 280px;
+    background-repeat: no-repeat;
+  }
+  .smart-home {
+    grid-area: smart-home;
+    background-image: url(../../img/products-nav/smart-home.jpg);
+    background-color: $white;
+    background-position: center 140px;
+    background-size: 360px;
+    background-repeat: no-repeat;
+  }
+
+  .product-nav {
+    display: flex;
+    flex-direction: column;
+    background-color: $white;
+    img {
+      width: 240px;
+      object-fit: cover;
+    }
+    .product-btn {
+      padding: 20px;
+    }
+  }
+
+  .product-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 20px;
+  }
+}

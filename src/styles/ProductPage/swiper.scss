@@ -1,0 +1,107 @@
+.product-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  .product-swiper {
+    display: flex;
+    width: 589px;
+    height: 490px;
+    margin-right: 60px;
+
+    .mySwiper {
+      width: 82px !important;
+      margin-right: 20px;
+
+      .swiper-wrapper {
+        flex-direction: column;
+        width: 82px !important;
+        height: 100%;
+
+        .swiper-slide {
+          height: 80px !important;
+          width: 80px !important;
+          background-color: #fff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 1px solid #d9d9d9;
+          border-radius: 4px;
+          cursor: pointer;
+          &:not(:last-child) {
+            margin-bottom: 20px;
+          }
+          img {
+            max-width: 80%;
+            max-height: 80%;
+          }
+        }
+      }
+    }
+
+    .mySwiper2 {
+      border: 1px solid #d9d9d9;
+      border-radius: 4px;
+      width: 488px;
+      .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          max-width: 80%;
+          max-height: 80%;
+        }
+      }
+    }
+  }
+
+  .product-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 490px;
+    width: 589px;
+
+    .vendor {
+      font-size: 14px;
+      color: $grey;
+    }
+
+    .title {
+      color: $dark;
+      font-size: 24px;
+    }
+
+    .testimonials {
+      margin-bottom: 20px;
+      .product__rating {
+        span {
+          color: $accent;
+          margin-right: 1px;
+        }
+      }
+    }
+
+    .available {
+      margin-bottom: 20px;
+      color: $grey;
+    }
+
+    .product-description {
+      font-size: 16px;
+      color: $dark;
+      margin-bottom: 20px;
+    }
+
+    .price__current {
+      font-family: "Roboto", sans-serif;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 42px;
+      color: $dark;
+      margin-right: 40px;
+    }
+  }
+}
