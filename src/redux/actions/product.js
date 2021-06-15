@@ -7,7 +7,7 @@ export const setLoaded = (value) => ({
 
 export const fetchProduct = (id) => (dispatch) => {
   dispatch(setLoaded(false));
-  axios.get(`/products/?id=${id}`).then(({ data }) => {
+  axios.get(`http://localhost:3001/products/?id=${id}`).then(({ data }) => {
     dispatch(setProduct(data));
   });
 };
