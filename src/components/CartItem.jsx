@@ -10,14 +10,6 @@ function CartItem({
   onPlusCartProduct,
   onMinusCartProduct,
 }) {
-  // const handleDeleteProductInCart = () => {
-  //   onDeleteProductInCart({ id, price });
-  // };
-
-  // const handlePlusProduct = () => {
-  //   onPlusCartProduct({ id, count });
-  // };
-
   const handleDeleteProductInCart = () => {
     onDeleteProductInCart(id);
   };

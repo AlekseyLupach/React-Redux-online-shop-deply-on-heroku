@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router";
-import { fetchProduct } from "../redux/actions/products";
+import { fetchProduct } from "../redux/actions/product";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Rating from "react-rating";
 import { addProductToCart } from "../redux/actions/cart";

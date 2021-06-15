@@ -133,7 +133,7 @@ function HomePages() {
         </div>
       </section>
 
-      <section className="about-us" id="about-us">
+      <section className="about-us" id="about-us" name="about-us">
         <div className="about-us_wrapper container">
           <div className="about-us_video">
             <img src={premiumReseller} alt={premiumReseller} />

@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-
+import { HashLink } from "react-router-hash-link";
 import { bubble as Menu } from "react-burger-menu";
 import Button from "./Button.jsx";
 
@@ -42,33 +42,36 @@ function Header() {
         >
           Каталог товаров
         </Link>
-        <Link
-          to={{ pathname: "/", hash: "#about-us" }}
+        <HashLink
+          smooth
+          to="/#about-us"
           onClick={() => {
             closeMenu();
           }}
           className="nav__link"
         >
           О нас
-        </Link>
-        <Link
-          to={{ pathname: "/", hash: "#advantages-cards" }}
+        </HashLink>
+        <HashLink
+          smooth
+          to="/#advantages-cards"
           onClick={() => {
             closeMenu();
           }}
           className="nav__link"
         >
           Услуги
-        </Link>
-        <Link
-          to={{ pathname: "/", hash: "#contacts" }}
+        </HashLink>
+        <HashLink
+          smooth
+          to="/#contacts"
           onClick={() => {
             closeMenu();
           }}
           className="nav__link"
         >
           Контакты
-        </Link>
+        </HashLink>
       </Menu>
       <div className="container header__wrapper">
         <h3 className="header__logo">
@@ -90,19 +93,19 @@ function Header() {
               </Link>
             </li>
             <li className="nav__item">
-              <a href="/#about-us" className="nav__link">
+              <HashLink smooth to="/#about-us" className="nav__link">
                 О нас
-              </a>
+              </HashLink>
             </li>
             <li className="nav__item">
-              <a href="/#advantages-cards" className="nav__link">
+              <HashLink smooth to="/#advantages-cards" className="nav__link">
                 Услуги
-              </a>
+              </HashLink>
             </li>
             <li className="nav__item">
-              <a href="/#contacts" className="nav__link">
+              <HashLink smooth to="/#contacts" className="nav__link">
                 Контакты
-              </a>
+              </HashLink>
             </li>
           </ul>
         </nav>

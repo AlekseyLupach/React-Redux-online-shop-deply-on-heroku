@@ -25,14 +25,6 @@ function Cart() {
     }
   };
 
-  // const onDeleteProductInCart = (ojb) => {
-  //   dispatch(deleteProductInCart(ojb));
-  // };
-
-  // const onPlusCartProduct = (obj) => {
-  //   dispatch(plusCartProduct(obj));
-  // };
-
   const onDeleteProductInCart = (id) => {
     dispatch(deleteProductInCart(id));
   };
@@ -124,14 +116,6 @@ function Cart() {
               </div>
             </div>
             <ul className="cart-lists">
-              {/* {items.map((obj, index) => (
-                <CartItem
-                  key={index}
-                  {...obj}
-                  onDeleteProductInCart={onDeleteProductInCart}
-                  onPlusCartProduct={onPlusCartProduct}
-                />
-              ))} */}
               {addedProducts.map((obj) => (
                 <CartItem
                   key={obj.id}
