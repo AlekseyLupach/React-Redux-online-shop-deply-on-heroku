@@ -12,15 +12,11 @@ import {
   minusCartProduct,
 } from "../redux/actions/cart";
 
-import emptyCartImg from "../img/cart/empty-cart.jpg";
+import emptyCartImg from "../img/cart/cart.png";
 
 function Cart() {
   const dispatch = useDispatch();
   const { totalPrice, itemsCount, items } = useSelector(({ cart }) => cart);
-
-  // const addedProducts = Object.keys(items).map((key) => {
-  //   return items[key].items[0];
-  // });
 
   const onClickClearCart = () => {
     if (window.confirm("Вы действительно хотите очистить корзину?")) {
@@ -119,19 +115,6 @@ function Cart() {
               </div>
             </div>
             <ul className="cart-lists">
-              {/* {addedProducts.map((obj) => (
-                <CartProduct
-                  key={obj.id}
-                  id={obj.id}
-                  name={obj.name}
-                  imgLeft={obj.imgLeft}
-                  totalPrice={items[obj.id].totalPrice}
-                  itemsCount={items[obj.id].items.length}
-                  onDeleteProductInCart={onDeleteProductInCart}
-                  onPlusCartProduct={onPlusCartProduct}
-                  onMinusCartProduct={onMinusCartProduct}
-                />
-              ))} */}
               {map(items, ([item]) => (
                 <CartProduct
                   key={item.id}

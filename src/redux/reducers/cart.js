@@ -7,7 +7,7 @@ const initialState = {
   itemsCount: 0,
 };
 
-export default (state = initialState, action) => {
+const cart = (state = initialState, action) => {
   return produce(state, (draft) => {
     switch (action.type) {
       case "ADD_PRODUCT_CART":
@@ -38,9 +38,10 @@ export default (state = initialState, action) => {
       (prev, cur) => prev.concat(cur),
       []
     );
-    console.log(draft.items);
 
     draft.totalPrice = result.reduce((total, obj) => obj.price + total, 0);
     draft.itemsCount = result.length;
   });
 };
+
+export default cart;

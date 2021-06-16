@@ -9,7 +9,7 @@ import SwiperCore, { EffectFlip, Pagination, Navigation } from "swiper/core";
 
 SwiperCore.use([EffectFlip, Pagination, Navigation]);
 
-function ProductBlock({
+function Product({
   name,
   imgLeft,
   imgCenter,
@@ -64,7 +64,7 @@ function ProductBlock({
   );
 }
 
-ProductBlock.propTypes = {
+Product.propTypes = {
   name: PropTypes.string,
   imgLeft: PropTypes.string,
   imgCenter: PropTypes.string,
@@ -77,7 +77,7 @@ ProductBlock.propTypes = {
   countProductAdded: PropTypes.number,
 };
 
-ProductBlock.defaultProps = {
+Product.defaultProps = {
   name: "---",
   price: 0,
   term: 0,
@@ -85,4 +85,4 @@ ProductBlock.defaultProps = {
   oldPrice: 0,
 };
 
-export default ProductBlock;
+export default Product;
