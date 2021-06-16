@@ -31,8 +31,9 @@
     "swiper": "6.4.7",
     "web-vitals": "^1.0.1"
   },
+  "proxy": "http://localhost:3001",
   "scripts": {
-    "start": "node server.js",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "server": "node server.js",
