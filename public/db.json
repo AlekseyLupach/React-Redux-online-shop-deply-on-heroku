@@ -115,9 +115,9 @@
     {
       "id": 9,
       "name": "Смартфон Apple iPhone 12 128GB (зеленый)",
-      "imgLeft": "/img/catalog/iphone-green.jpg",
-      "imgCenter": "/img/catalog/iphone-green-2.jpg",
-      "imgRight": "/img/catalog/iphone-green-3.jpg",
+      "imgLeft": "/img/catalog/phone-green.jpg",
+      "imgCenter": "/img/catalog/phone-green-2.jpg",
+      "imgRight": "/img/catalog/phone-green-3.jpg",
       "price": 4199,
       "oldPrice": 4299,
       "available": 20,
