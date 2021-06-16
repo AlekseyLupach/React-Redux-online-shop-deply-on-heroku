@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import logoMasterCard from "../img/footer/logo-mastercard.png";
 import logoVisa from "../img/footer/logo-visa.png";
-import logoGooglePay from "../img/footer/logo-google-pay.png";
 import logoApplePay from "../img/footer/logo-apple-pay.png";
+import logoGooglePay from "../img/footer/logo-google-pay.png";
+import logoMasterCard from "../img/footer/logo-mastercard.png";
 
 function Footer() {
   return (

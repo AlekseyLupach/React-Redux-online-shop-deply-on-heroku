@@ -1,7 +1,7 @@
 import React from "react";
 import ContentLoader from "react-content-loader";
 
-function ProductsLoadingBlock() {
+function ProductsLoading() {
   return (
     <ContentLoader
       speed={2}
@@ -28,4 +28,4 @@ function ProductsLoadingBlock() {
   );
 }
 
-export default ProductsLoadingBlock;
+export default ProductsLoading;

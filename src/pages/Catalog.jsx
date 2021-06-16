@@ -4,13 +4,13 @@ import { useSelector, useDispatch } from "react-redux";
 import {
   Categories,
   SortPopup,
-  ProductBlock,
-  ProductsLoadingBlock,
+  Product,
+  ProductsLoading,
   Search,
   AddToCartButton,
 } from "../components";
-import { fetchProducts } from "../redux/actions/products";
 import { addProductToCart } from "../redux/actions/cart";
+import { fetchProducts } from "../redux/actions/products";
 
 import { setCategory, setSortBy, setSearch } from "../redux/actions/filters.js";
 
@@ -25,7 +25,7 @@ function Catalog() {
   const dispatch = useDispatch();
 
   const items = useSelector(({ products }) => products.items);
-  const cartitems = useSelector(({ cart }) => cart.items);
+  const cartItems = useSelector(({ cart }) => cart.items);
   const isLoaded = useSelector(({ products }) => products.isLoaded);
   const { sortBy, category, search } = useSelector(({ filters }) => filters);
 
@@ -82,11 +82,11 @@ function Catalog() {
               ? items.map((obj) => (
                   <li className="product-grid__item" key={obj.id}>
                     <article className="product">
-                      <ProductBlock key={obj.id} {...obj} />
+                      <Product key={obj.id} {...obj} />
                       <AddToCartButton
                         onClick={() => handleAddProductToCart({ ...obj })}
                         countProductAdded={
-                          cartitems[obj.id] && cartitems[obj.id].items.length
+                          cartItems[obj.id] && cartItems[obj.id].length
                         }
                       />
                     </article>
@@ -94,7 +94,7 @@ function Catalog() {
                 ))
               : Array(16)
                   .fill(0)
-                  .map((_, index) => <ProductsLoadingBlock key={index} />)}
+                  .map((_, index) => <ProductsLoading key={index} />)}
           </ul>
         </div>
       </section>

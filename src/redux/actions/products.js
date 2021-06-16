@@ -22,9 +22,3 @@ export const setProducts = (items) => ({
   type: "SET_PRODUCTS",
   payload: items,
 });
-
-// fetch("http://localhost:3000/db.json")
-//   .then((resp) => resp.json())
-//   .then((json) => {
-//     setProducts(json.products);
-//   });

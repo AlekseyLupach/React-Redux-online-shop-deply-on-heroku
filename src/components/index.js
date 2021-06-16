@@ -1,11 +1,10 @@
-export { default as Button } from "./Button";
 export { default as Header } from "./Header";
 export { default as Footer } from "./Footer";
 export { default as Categories } from "./Categories";
 export { default as SortPopup } from "./SortPopup";
 export { default as Search } from "./Search";
-export { default as ProductBlock } from "./productBlock";
-export { default as CartItem } from "./CartItem";
-export { default as ProductsLoadingBlock } from "./productBlock/LoadingBlock";
+export { default as Product } from "./product";
+export { default as CartProduct } from "./CartProduct";
+export { default as ProductsLoading } from "./product/ProductsLoading";
 export { default as Loaders } from "./Loaders";
 export { default as AddToCartButton } from "./AddToCartButton";

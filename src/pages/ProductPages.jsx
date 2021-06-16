@@ -1,11 +1,13 @@
+import { useParams } from "react-router";
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { useParams } from "react-router";
-import { fetchProduct } from "../redux/actions/product";
-import { Swiper, SwiperSlide } from "swiper/react";
+
 import Rating from "react-rating";
-import { addProductToCart } from "../redux/actions/cart";
+import { Swiper, SwiperSlide } from "swiper/react";
+
 import { Loaders } from "../components";
+import { fetchProduct } from "../redux/actions/product";
+import { addProductToCart } from "../redux/actions/cart";
 
 import SwiperCore, { Navigation, Thumbs } from "swiper/core";
 import AddToCartButton from "../components/AddToCartButton";
@@ -110,7 +112,7 @@ function ProductPages() {
             <AddToCartButton
               onClick={() => handleAddProductToCart({ ...product })}
               countProductAdded={
-                cartitems[product.id] && cartitems[product.id].items.length
+                cartitems[product.id] && cartitems[product.id].length
               }
             />
           </div>

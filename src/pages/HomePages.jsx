@@ -1,25 +1,24 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Link } from "react-router-dom";
+import SwiperCore, { Pagination } from "swiper/core";
 import { YMaps, Map, Placemark } from "react-yandex-maps";
 
 import "swiper/swiper.min.css";
 import "swiper/components/pagination/pagination.min.css";
 
-import airprodsmax from "../img/owl-slider/airprodsmax.jpg";
-import iphone from "../img/owl-slider/iphone.jpg";
-import mac from "../img/owl-slider/mac.jpg";
-import airpodsPRO from "../img/catalog/airpodsPRO-3.jpg";
-import casse from "../img/catalog/case.jpg";
 import app from "../img/catalog/app.jpg";
-import premiumReseller from "../img/about-us/premium-reseller.jpg";
-import card from "../img/advantages-cards/card.svg";
-import car from "../img/advantages-cards/car.svg";
-import tools from "../img/advantages-cards/tools.svg";
+import mac from "../img/owl-slider/mac.jpg";
+import casse from "../img/catalog/case.jpg";
 import tv from "../img/advantages-cards/tv.svg";
-
-import SwiperCore, { Pagination } from "swiper/core";
+import iphone from "../img/owl-slider/iphone.jpg";
+import car from "../img/advantages-cards/car.svg";
+import card from "../img/advantages-cards/card.svg";
+import tools from "../img/advantages-cards/tools.svg";
+import airpodsPRO from "../img/catalog/airpodsPRO-3.jpg";
+import airprodsmax from "../img/owl-slider/airprodsmax.jpg";
+import premiumReseller from "../img/about-us/premium-reseller.jpg";
 
 SwiperCore.use([Pagination]);
 

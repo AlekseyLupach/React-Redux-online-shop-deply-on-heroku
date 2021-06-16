@@ -1,7 +1,7 @@
 import React from "react";
+import Rating from "react-rating";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
-import Rating from "react-rating";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -20,7 +20,6 @@ function ProductBlock({
   oldPrice,
   popular,
   id,
-  countProductAdded,
 }) {
   return (
     <>

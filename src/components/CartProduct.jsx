@@ -1,11 +1,13 @@
 import React from "react";
 
-function CartItem({
+function CartProduct({
   id,
   name,
   imgLeft,
   itemsCount,
+  count,
   totalPrice,
+  price,
   onDeleteProductInCart,
   onPlusCartProduct,
   onMinusCartProduct,
@@ -46,7 +48,7 @@ function CartItem({
               ></path>
             </svg>
           </button>
-          <div className="cart-item_button-value">{itemsCount}</div>
+          <div className="cart-item_button-value">{count}</div>
           <button
             className="cart-item_button cart-button_outline cart-button_circle"
             onClick={handlePlusProduct}
@@ -69,7 +71,7 @@ function CartItem({
             </svg>
           </button>
         </div>
-        <div className="cart-item_price">{totalPrice} BYN</div>
+        <div className="cart-item_price">{count * price} BYN</div>
         <div className="cart-iteme_remove">
           <button
             className="cart-item_button cart-button_circle cart-button_outline"
@@ -98,4 +100,4 @@ function CartItem({
   );
 }
 
-export default CartItem;
+export default CartProduct;

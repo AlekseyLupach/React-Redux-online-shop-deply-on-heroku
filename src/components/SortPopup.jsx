@@ -1,5 +1,5 @@
-import React, { useRef, useState, useEffect, memo } from "react";
 import PropTypes from "prop-types";
+import React, { useRef, useState, useEffect, memo } from "react";
 
 const SortPopup = memo(function SortPopup({
   items,

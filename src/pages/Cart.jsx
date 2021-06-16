@@ -1,6 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { CartProduct } from "../components";
 import { useDispatch, useSelector } from "react-redux";
-import { CartItem } from "../components";
+
+import { map } from "lodash";
+
 import {
   clearCart,
   deleteProductInCart,
@@ -9,15 +13,14 @@ import {
 } from "../redux/actions/cart";
 
 import emptyCartImg from "../img/cart/empty-cart.jpg";
-import { Link } from "react-router-dom";
 
 function Cart() {
   const dispatch = useDispatch();
   const { totalPrice, itemsCount, items } = useSelector(({ cart }) => cart);
 
-  const addedProducts = Object.keys(items).map((key) => {
-    return items[key].items[0];
-  });
+  // const addedProducts = Object.keys(items).map((key) => {
+  //   return items[key].items[0];
+  // });
 
   const onClickClearCart = () => {
     if (window.confirm("Вы действительно хотите очистить корзину?")) {
@@ -116,8 +119,8 @@ function Cart() {
               </div>
             </div>
             <ul className="cart-lists">
-              {addedProducts.map((obj) => (
-                <CartItem
+              {/* {addedProducts.map((obj) => (
+                <CartProduct
                   key={obj.id}
                   id={obj.id}
                   name={obj.name}
@@ -127,6 +130,16 @@ function Cart() {
                   onDeleteProductInCart={onDeleteProductInCart}
                   onPlusCartProduct={onPlusCartProduct}
                   onMinusCartProduct={onMinusCartProduct}
+                />
+              ))} */}
+              {map(items, ([item]) => (
+                <CartProduct
+                  key={item.id}
+                  {...item}
+                  onMinusCartProduct={() => onMinusCartProduct(item.id)}
+                  onPlusCartProduct={() => onPlusCartProduct(item.id)}
+                  onDeleteProductInCart={() => onDeleteProductInCart(item.id)}
+                  count={items[item.id].length}
                 />
               ))}
             </ul>
@@ -139,10 +152,12 @@ function Cart() {
               </p>
             </div>
             <div className="cart-footer_button">
-              <button className="cart-footer_button-goback">
-                <i className="fa fa-long-arrow-left" aria-hidden="true"></i>
-                <Link to="/catalog">Вернуться назад</Link>
-              </button>
+              <Link to="/catalog">
+                <button className="cart-footer_button-goback">
+                  <i className="fa fa-long-arrow-left" aria-hidden="true"></i>
+                  Вернуться к каталогу
+                </button>
+              </Link>
               <button className="cart-footer_button-payment">
                 Оплатить сейчас
               </button>
@@ -152,7 +167,9 @@ function Cart() {
           <div className="empty-cart">
             <h2 className="empty-cart_title">Корзина пуста</h2>
             <p>Вероятней всего, вы не добавили товар в корзину.</p>
-            <p>Для того, чтобы заказать пиццу, перейди на главную страницу.</p>
+            <p>
+              Для того, чтобы сделать заказ, перейди в раздел каталог товаров.
+            </p>
             <img
               className="empty-cart_img"
               src={emptyCartImg}
@@ -162,7 +179,7 @@ function Cart() {
               to="/catalog"
               className="empty-cart_button cart-footer_button-goback"
             >
-              Вернуться назад
+              Каталог товаров
             </Link>
           </div>
         )}

@@ -1,3 +1,5 @@
+/* eslint import/no-anonymous-default-export: [2, {"allowObject": true}] */
+
 import { createStore, compose, applyMiddleware } from "redux";
 import persistStore from "redux-persist/es/persistStore";
 import thunk from "redux-thunk";

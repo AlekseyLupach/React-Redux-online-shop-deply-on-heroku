@@ -1,9 +1,8 @@
 import React from "react";
-import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 import { HashLink } from "react-router-hash-link";
 import { bubble as Menu } from "react-burger-menu";
-import Button from "./Button.jsx";
 
 function Header() {
   const { totalPrice, itemsCount } = useSelector(({ cart }) => ({
@@ -111,12 +110,12 @@ function Header() {
         </nav>
         <div className="header__cart">
           <Link to="/cart">
-            <Button className="cart__text">
+            <button className="cart__text">
               <span className="cart__quantity-price">{totalPrice} BYN</span>
               <div className="button__delimiter"></div>
               <i className="fa fa-shopping-cart"></i>
               <span className="cart__quantity">{itemsCount}</span>
-            </Button>
+            </button>
           </Link>
         </div>
       </div>

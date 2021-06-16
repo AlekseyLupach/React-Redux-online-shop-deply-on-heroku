@@ -1,11 +1,11 @@
 import "./styles/style.scss";
 
-import { Header } from "./components";
-import { Footer } from "./components";
-import { Catalog, Cart, HomePages, ProductPages } from "./pages";
 import React from "react";
-import { Route } from "react-router-dom";
 import Gotop from "react-go-top";
+import { Route } from "react-router-dom";
+
+import { Header, Footer } from "./components";
+import { Catalog, Cart, HomePages, ProductPages } from "./pages";
 
 function App() {
   return (
