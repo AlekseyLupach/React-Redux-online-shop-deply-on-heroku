@@ -11,10 +11,10 @@ function App() {
   return (
     <div className="wrapper grid-wrapper">
       <Header />
-      <Route path="/" component={HomePages} exact />
-      <Route path="/catalog" component={Catalog} exact />
-      <Route path="/cart" component={Cart} exact />
-      <Route path="/product/:id" component={ProductPages} exact />
+      <Route exact path="/" component={HomePages} />
+      <Route path="/catalog" component={Catalog} />
+      <Route path="/cart" component={Cart} />
+      <Route path="/product/:id" component={ProductPages} />
       <Gotop
         style={{ width: "40px", height: "40px" }}
         visibilityHeight={500}
