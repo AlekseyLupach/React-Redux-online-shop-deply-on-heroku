@@ -23,6 +23,12 @@ import premiumReseller from "../img/about-us/premium-reseller.jpg";
 SwiperCore.use([Pagination]);
 
 function HomePages() {
+  const mapData = {
+    center: [53.68615307084164, 23.831298499999974],
+    zoom: 17,
+  };
+  const coordinates = [[53.68615307084164, 23.831298499999974]];
+
   return (
     <main>
       <section className="carusel">
@@ -253,15 +259,10 @@ function HomePages() {
         </div>
         <div className="maps__wrapper">
           <YMaps>
-            <Map
-              width="100%"
-              height="463px"
-              defaultState={{
-                center: [53.68615307084164, 23.831298499999974],
-                zoom: 17,
-              }}
-            >
-              <Placemark geometry={[53.68615307084164, 23.831298499999974]} />
+            <Map width="100%" height="463px" defaultState={mapData}>
+              {coordinates.map((coordinate) => (
+                <Placemark key={coordinate} geometry={coordinate} />
+              ))}
             </Map>
           </YMaps>
         </div>
